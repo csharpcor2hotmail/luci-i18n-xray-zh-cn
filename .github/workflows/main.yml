@@ -17,19 +17,19 @@ jobs:
         run: sudo apt-get install -y gettext make
 
       - name: Validate .po files
-        run: make check  # 如果失败，Action 会自动终止
+        run: make check
 
       - name: Build .lmo files
-        run: make all    # 编译核心步骤
+        run: make all
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # 必须使用 v4
         with:
-          name: compiled-translations
+          name: translations
           path: |
-            **/*.lmo
-            **/*.po
+            ./**/*.lmo    # 明确指定路径
+            ./**/*.po
+          if-no-files-found: error  # 如果无文件则报错
 
-      - name: Clean (optional)
-        if: always()    # 无论成功失败都执行清理
+      - name: Clean
         run: make clean
