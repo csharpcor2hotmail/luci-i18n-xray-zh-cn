@@ -266,17 +266,17 @@ msgstr "警告：这些功能是实验性的，可能会导致很多问题，无
 msgid "Inbounds"
 msgstr "入站代理"
 
-msgid "Transparent proxy port (TCP4)"
-msgstr "透明代理端口（TCP4）"
+# msgid "Transparent proxy port (TCP4)"
+# msgstr "透明代理端口（TCP4）"
 
-msgid "Transparent proxy port (UDP4)"
-msgstr "透明代理端口（UDP4）"
+# msgid "Transparent proxy port (UDP4)"
+# msgstr "透明代理端口（UDP4）"
 
-msgid "Transparent proxy port (TCP6)"
-msgstr "透明代理端口（TCP6）"
+# msgid "Transparent proxy port (TCP6)"
+# msgstr "透明代理端口（TCP6）"
 
-msgid "Transparent proxy port (UDP6)"
-msgstr "透明代理端口（UDP6）"
+# msgid "Transparent proxy port (UDP6)"
+# msgstr "透明代理端口（UDP6）"
 
 msgid "Address Pool (IPv4)"
 msgstr "地址池（IPv4）"
